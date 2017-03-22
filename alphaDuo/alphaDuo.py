@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 import time
 import argparse 
-from __future__ import print_functino
+from __future__ import print_function
 
 
 class cameraSync():
