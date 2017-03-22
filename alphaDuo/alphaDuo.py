@@ -65,4 +65,4 @@ if __name__=='__main__':
     else:
         pass
 
-    print('capture stack finished @: ' time.asctime(time.time()))
+    print('capture stack finished @: '+time.asctime(time.time()))
