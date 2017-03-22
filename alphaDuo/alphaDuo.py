@@ -24,7 +24,7 @@ class cameraSync():
         print('delay between captures: '+str(delay))
         duration_seconds = duration*60*60
         stop_t = time.time()+duration_seconds
-        print('capture start time: ' str(time.asctime(time.time())))
+        print('capture start time: '+str(time.asctime(time.time())))
         while time.time()<stop_t:
             time.sleep(delay-1)
             GPIO.output(self.triggerPin, False)
