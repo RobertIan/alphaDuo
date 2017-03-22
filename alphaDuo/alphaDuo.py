@@ -4,9 +4,9 @@ import argparse
 from __future__ import print_functino
 
 
-class cameraSync(triggerPin=26):
+class cameraSync():
 
-    def __init__(self, self.triggerPin):
+    def __init__(self, self.triggerPin=26):
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(self.triggerPin, GPIO.OUT)
         GPIO.output(self.triggerPin, True)
