@@ -14,6 +14,7 @@ class cameraSync():
         GPIO.output(self.triggerPin, True)
 
     def run_test(self):
+        print('test start time: '+str(time.asctime(time.localtime())))
         for i in range(0, 10):
             time.sleep(0.50)
             GPIO.output(self.triggerPin, False)
@@ -25,7 +26,7 @@ class cameraSync():
         print('delay between captures: '+str(delay))
         duration_seconds = duration*60*60
         stop_t = time.time()+duration_seconds
-        print('capture start time: '+str(time.asctime(time.time())))
+        print('capture start time: '+str(time.asctime(time.localtime())))
         while time.time()<stop_t:
             time.sleep(delay-1)
             GPIO.output(self.triggerPin, False)
